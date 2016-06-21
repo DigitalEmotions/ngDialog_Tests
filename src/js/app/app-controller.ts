@@ -2,18 +2,20 @@
 
 interface IAppCtrlScope extends ng.IScope
 {
-
+	openModal():void;
 }
 
 class AppCtrl
 {
-	constructor(private $scope:IAppCtrlScope) {
-		console.log("Hello TypeScript!");
+	constructor(private $scope:IAppCtrlScope, Util:Util) {
+		$scope.openModal = function() {
+			Util.showModal($scope, "js/modal/tall/tall-template.html");
+		};
 	}
 }
 
 angular.module('app.controllers')
 
-.controller('AppCtrl', ($scope) => {
-	return new AppCtrl($scope);
+.controller('AppCtrl', ($scope, Util) => {
+	return new AppCtrl($scope, Util);
 });
