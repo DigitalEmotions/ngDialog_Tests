@@ -6,8 +6,7 @@ angular.module('app', [
 			   'ui.router',
 			   'app.common',
 			   'app.components',
-			   'app.controllers',
-			   'ngDialog'
+			   'app.controllers'
 ])
 
 .run(function($rootScope:angular.IRootScopeService) {
