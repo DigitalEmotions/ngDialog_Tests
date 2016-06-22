@@ -684,13 +684,6 @@ body.ngdialog-open {
 body.ngdialog-open, html.ngdialog-open {
   overflow: hidden; }
 
-.ngdialog-overlay {
-  pointer-events: none; }
-
-.app {
-  background-color: beige;
-  height: 5000px; }
-
 .tall {
   background-color: mediumaquamarine;
   height: 1000px; }
